@@ -1,0 +1,195 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* NAV */
+.header {
+background-color: #322C2B;
+padding: 10px;
+overflow: hidden;
+}
+
+.logo-container {
+display:contents;
+align-items: center;
+}
+
+.titulo {
+color: white;
+font-size: 24px;
+margin: 0;
+line-height: 50px;
+text-align:center;
+}
+
+nav {
+margin-left: auto;
+}
+
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav ul li {
+position: relative;
+}
+
+nav ul li a {
+display: block;
+color: white;
+text-align: center;
+padding: 10px 20px;
+text-decoration: none;
+}
+
+nav ul li a:hover {
+background-color: #555;
+}
+
+.dropdown {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #322C2B;
+min-width: 160px;
+box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: rgb(255, 255, 255);
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+}
+
+.dropdown-content a:hover {
+background-color: #e2b2b2;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* FOOTER */
+.pie-pagina {
+background-color: #d2b68a;
+}
+
+.pie-pagina .grupo-1 {
+width: 100%;
+max-width: 1200px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 20px;
+padding: 25px 0px;
+}
+
+.pie-pagina .grupo-1 .bloque h2 {
+color: #322C2B;
+margin-bottom: 15px;
+font-size: 18px;
+}
+
+.pie-pagina .grupo-1 .bloque p {
+color: #322C2B;
+margin-bottom: 5px; 
+font-size: 14px; 
+}
+
+.fa-brands {
+border-radius: 100px;
+color: #322C2B;
+display: inline-block;
+font-size: 30px;
+font-weight: 500;
+line-height: 24px;
+padding: 10px;
+}
+
+.fa-brands:hover {
+color: #F1FADA;
+}
+
+.pie-pagina .grupo-2 {
+background-color: #322C2B;
+padding: 10px;
+text-align: center;
+color: #fff;
+}
+
+.pie-pagina .grupo-1 .contacto {
+background-color: #d2b68a;
+text-align: left; 
+color: #322C2B;
+padding: 10px 3px;
+}
+
+.pie-pagina .grupo-1 .contacto h2 {
+font-size: 18px;
+margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+.pie-pagina .grupo-1 {
+  grid-template-columns: 1fr; 
+}
+
+.fa-brands {
+  font-size: 24px; 
+}
+
+.pie-pagina .grupo-1 .contacto {
+  text-align: center; 
+}
+}
+
+/* CARRUSEL */
+.carousel-inner img {
+width: auto;
+max-width: 100%;
+height: 550px;
+object-fit: cover;
+}
+
+/* PORTADA */
+.image-container {
+position: relative;
+width: 100%;
+height: auto;
+}
+
+.image-container img {
+width: 100%;
+height: auto;
+display: block;
+object-fit: cover;
+padding: 30px;
+}
+
+.hover-text {
+position: absolute;
+top: 50%;
+left: 60%;
+transform: translate(-50%, -50%);
+color: rgb(248, 243, 243);
+font-size: 30px;
+text-align:end;
+opacity: 0;
+transition: opacity 0.5s ease;  
+font-family: 'Times New Roman', Times, serif;
+}
+
+.image-container:hover .hover-text {
+opacity: 1;
+}
